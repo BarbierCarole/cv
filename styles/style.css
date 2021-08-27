@@ -33,20 +33,20 @@
         background-repeat: no-repeat; */
         background-position:  center center; 
         background-size: cover;
-        touch-action: pan-y pinch-zoom;
+        touch-action: manipulation;
 }
 
 .three {
     background-color:darkcyan;
-    touch-action: pan-y pinch-zoom;
+    touch-action: manipulation;
 }
 .four {
     background-color:deepskyblue;
-    touch-action: pan-y pinch-zoom;
+    touch-action: manipulation;
 }
 .five {
     background-color:lightseagreen;
-    touch-action: pan-y pinch-zoom;
+    touch-action: manipulation;
 }
 
 /* page accueil */
@@ -54,7 +54,7 @@
 .slide.one {
     display: flex;
     justify-content: center;
-    touch-action: pan-y;
+    touch-action: manipulation;
 }
 
 @keyframes light {
@@ -91,7 +91,7 @@
         background-repeat: no-repeat; */
         background-position:  center center; 
         background-size: cover;
-        touch-action: pan-x;
+        touch-action: manipulation;
     }
     .logoImg {
         width: 148px; 
