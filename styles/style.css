@@ -19,9 +19,7 @@
     overflow-y: scroll;
     overflow-x: hidden;
     position: absolute;
-    scrollbar-width: none;
-    touch-action: pan-x;
-    
+    scrollbar-width: none;    
     -ms-overflow-style: none;
 }
 ::-webkit-scrollbar {
@@ -88,6 +86,7 @@
         background-repeat: no-repeat; */
         background-position:  center center; 
         background-size: cover;
+        touch-action: pan-x;
     }
     .logoImg {
         width: 148px; 
