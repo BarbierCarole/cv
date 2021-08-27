@@ -33,20 +33,20 @@
         background-repeat: no-repeat; */
         background-position:  center center; 
         background-size: cover;
-        touch-action: manipulation;
+        touch-action: pan-left pan-right;
 }
 
 .three {
     background-color:darkcyan;
-    touch-action: manipulation;
+    touch-action: pan-left pan-right;
 }
 .four {
     background-color:deepskyblue;
-    touch-action: manipulation;
+    touch-action: pan-left pan-right;
 }
 .five {
     background-color:lightseagreen;
-    touch-action: manipulation;
+    touch-action: pan-left pan-right;
 }
 
 /* page accueil */
@@ -54,7 +54,7 @@
 .slide.one {
     display: flex;
     justify-content: center;
-    touch-action: manipulation;
+    touch-action: pan-left pan-right;
 }
 
 @keyframes light {
@@ -91,7 +91,7 @@
         background-repeat: no-repeat; */
         background-position:  center center; 
         background-size: cover;
-        touch-action: manipulation;
+        touch-action: pan-left pan-right;
     }
     .logoImg {
         width: 148px; 
@@ -107,6 +107,7 @@
         background-repeat: no-repeat; */
         background-position:  center center; 
         background-size: cover;
+        touch-action: pan-left pan-right;
     }
     .logoImg {
         width: 148px; 
@@ -122,6 +123,7 @@
         background-repeat: no-repeat; */
         background-position:  center center; 
         background-size: cover;
+        touch-action: pan-left pan-right;
     }
 
     .logoImg {
