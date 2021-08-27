@@ -33,25 +33,23 @@
         background-repeat: no-repeat; */
         background-position:  center center; 
         background-size: cover;
-        touch-action: pan-x pinch-zoom;
+        touch-action: pan-y pinch-zoom;
 }
 
 .three {
     background-color:darkcyan;
-    touch-action: pan-y;
+    touch-action: pan-y pinch-zoom;
 }
 .four {
     background-color:deepskyblue;
-    touch-action: pan-y;
+    touch-action: pan-y pinch-zoom;
 }
 .five {
     background-color:lightseagreen;
-    touch-action: pan-y;
+    touch-action: pan-y pinch-zoom;
 }
 
 /* page accueil */
-
-
 
 .slide.one {
     display: flex;
