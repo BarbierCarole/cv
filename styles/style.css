@@ -20,6 +20,8 @@
     overflow-x: hidden;
     position: absolute;
     scrollbar-width: none;
+    touch-action: pan-y;
+    touch-action: pan-y;
     -ms-overflow-style: none;
 }
 ::-webkit-scrollbar {
