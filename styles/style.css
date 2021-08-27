@@ -38,15 +38,15 @@
 
 .three {
     background-color:darkcyan;
-    touch-action: pan-x pinch-zoom;
+    touch-action: pan-y;
 }
 .four {
     background-color:deepskyblue;
-    touch-action: pan-x pinch-zoom;
+    touch-action: pan-y;
 }
 .five {
     background-color:lightseagreen;
-    touch-action: pan-x pinch-zoom;
+    touch-action: pan-y;
 }
 
 /* page accueil */
@@ -56,7 +56,7 @@
 .slide.one {
     display: flex;
     justify-content: center;
-    touch-action: pan-x pinch-zoom;
+    touch-action: pan-y;
 }
 
 @keyframes light {
