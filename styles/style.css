@@ -79,7 +79,8 @@
 
  
  /* smarthphone*/
- @media (max-width: 600px) { 
+ @media only screen and (max-width: 600px) and (orientation: portrait) { 
+
     .one {
         background-image:  url("../img/grey-vertical.jpg");
         /* background-size: contain;
@@ -94,8 +95,23 @@
     }
  }
 
+ @media only screen and (max-width: 1280px) and (orientation: landscape) { 
+
+    .one {
+        background-image:  url("../img/grey-horizontal.jpg");
+        /* background-size: contain;
+        background-repeat: no-repeat; */
+        background-position:  center center; 
+        background-size: cover;
+    }
+    .logoImg {
+        width: 148px; 
+        height: 162px;
+    }
+ }
+
  /* ecran pc les plus courants */
- @media (min-width: 601px) { 
+ @media only screen and (min-width: 601px) { 
     .one {
         background-image:  url("../img/grey-horizontal.jpg");
         /* background-size: contain;
