@@ -49,6 +49,8 @@ img {
 .main-container {
     width: 100vw;
     height: 100vh;
+    overflow-x:scroll;
+    overflow-y: hidden;
 }
 
 .main-container::after {
@@ -113,4 +115,8 @@ img {
     margin-right: 100px;
     text-align: center;
     z-index: 10;
+}
+
+::webkit-scrollbar {
+    display: none;
 }
