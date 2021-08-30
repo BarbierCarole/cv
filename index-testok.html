@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style-testok.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <div>Scale me with your mouse wheel.</div>
+    <script>
+        function zoom(event) {
+        event.preventDefault();
+
+        scale += event.deltaY * -0.01;
+
+        // Restrict scale
+        scale = Math.min(Math.max(.125, scale), 4);
+
+        // Apply scale transform
+        el.style.transform = `scale(${scale})`;
+        }
+
+        let scale = 1;
+        const el = document.querySelector('div');
+        el.onwheel = zoom;
+    </script>
+</body>
+</html>
