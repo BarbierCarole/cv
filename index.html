@@ -1,40 +1,94 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./styles/_reset.css">
-  <link rel="stylesheet" href="./styles/style.css">
- 
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/_reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Document</title>
 </head>
-
 <body>
-    <main>
-        <section>
-          <h1>Beep</h1>
-        </section>
-        <section>
-          <h1>Boop</h1>
-        </section>
-        <section>
-          <h1>Boooom</h1>
-        </section>
-          <section>
-          <h1>The End</h1>
-        </section>
-      </main>
-      <script src="./script/script.js"></script>
-      <!-- <script>
+    <div class="main-container">
+        <nav class="main-nav">
+            <ul class="ul__second">
+                <li id="border"><a href="#summer">Accueil</a></li>
+                <li><a href="#winter">Mes compétences</a></li>
+                <li><a href="#spring">Mes réalisations</a></li>
+                <li><a href="#automne">Pourquoi me choisir ?</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            
+            <section id="summer" class="summer">
+                <div class="image">
+                    <img src="../img/grey-horizontal.jpg" >
+                </div>
+    
+                <div class="content">
+                    <h3> Story line</h3>
+                    <h1>Mes formations</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, architecto</p>
+                </div>
+            </section>
+
+            <section id="winter" class="summer">
+                <div class="image second--image">
+                    <img src="../img/desk-pc.jpg" >
+                </div>
+    
+                <div class="content">
+                    <h3> Story line</h3>
+                    <h1>Mes compétences</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, architecto</p>
+                </div>
+            </section>
+
+            <section id="spring" class="summer">
+                <div class="image third--image">
+                    <img src="../img/grey-horizontal.jpg" >
+                </div>
+    
+                <div class="content">
+                    <h3> Story line</h3>
+                    <h1>Mes réalisations</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, architecto</p>
+                </div>
+            </section>
+
+            <section id="automne" class="summer">
+                <div class="image four-image">
+                    <img src="../img/grey-horizontal.jpg" >
+                </div>
+    
+                <div class="content">
+                    <h3> Story line</h3>
+                    <h1>pourquoi me choisir</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, architecto</p>
+                </div>
+            </section>
+
+            <section id="contact" class="summer">
+                <div class="image four-image">
+                    <img src="../img/grey-horizontal.jpg" >
+                </div>
+    
+                <div class="content">
+                    <h3> Story line</h3>
+                    <h1>Me contacter</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, architecto</p>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!-- <script>
         const slide = (evt) => {
         evt.preventDefault();
-        const scrollContainer = document.querySelector("main");
+        const scrollContainer = document.getElementsByClassName("container");
         scrollContainer.scrollLeft += evt.deltaY;
         }    
-        document.querySelector("main").addEventListener('wheel', slide);    
+        document.getElementsByClassName("container").addEventListener('wheel', slide);    
       </script> -->
 </body>
-
 </html>
