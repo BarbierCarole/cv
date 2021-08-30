@@ -54,6 +54,27 @@ img {
     width: 100%;
 }
 
+/* .main-container {
+    width: 100vw;
+    height: 100vh;
+    overflow-x:scroll;
+    overflow-y: hidden;
+} */
+
+/* .main-container::after {
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+} */
+
+/* #logo {
+    border: 1px solid black
+} */
+
 .main-nav {
     position: fixed;
     display: flex;
