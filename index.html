@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/_reset.css">
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/style-with-mousewheel.css">
     <title>Document</title>
 </head>
 <body>
@@ -19,12 +19,10 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <div class="container">
+        <main class="container">
             
             <section id="summer" class="summer">
-                <div class="image">
-                    <img src="../img/grey-horizontal.jpg" >
-                </div>
+                
     
                 <div class="content">
                     <h3> Story line</h3>
@@ -34,9 +32,7 @@
             </section>
 
             <section id="winter" class="summer">
-                <div class="image second--image">
-                    <img src="../img/desk-pc.jpg" >
-                </div>
+                
     
                 <div class="content">
                     <h3> Story line</h3>
@@ -46,9 +42,7 @@
             </section>
 
             <section id="spring" class="summer">
-                <div class="image third--image">
-                    <img src="../img/grey-horizontal.jpg" >
-                </div>
+               
     
                 <div class="content">
                     <h3> Story line</h3>
@@ -58,9 +52,7 @@
             </section>
 
             <section id="automne" class="summer">
-                <div class="image four-image">
-                    <img src="../img/grey-horizontal.jpg" >
-                </div>
+                
     
                 <div class="content">
                     <h3> Story line</h3>
@@ -70,25 +62,15 @@
             </section>
 
             <section id="contact" class="summer">
-                <div class="image four-image">
-                    <img src="../img/grey-horizontal.jpg" >
-                </div>
-    
+               
                 <div class="content">
                     <h3> Story line</h3>
                     <h1>Me contacter</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, architecto</p>
                 </div>
             </section>
-        </div>
+        </main>
     </div>
-    <!-- <script>
-        const slide = (evt) => {
-        evt.preventDefault();
-        const scrollContainer = document.getElementsByClassName("container");
-        scrollContainer.scrollLeft += evt.deltaY;
-        }    
-        document.getElementsByClassName("container").addEventListener('wheel', slide);    
-      </script> -->
+    <script src="./script/script.js"></script>
 </body>
 </html>
