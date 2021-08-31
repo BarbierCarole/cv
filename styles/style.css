@@ -2,11 +2,13 @@ body{
     padding:0;
     margin:0;
   }
+  /* 1 - slide */
   main {
       position: relative;
       width: 100vw;
       height: 100vh;
       -webkit-overflow-scrolling: touch;
+      overflow: scroll hidden;
   }
   
   .wrapper {
@@ -15,15 +17,119 @@ body{
       align-items: flex-start;
       flex-wrap: nowrap;
       width: auto;
+      z-index: 1;
   }
   
   .wrapper > section {
-      pointer-events: none;
+      /* pointer-events: none; */
       flex: 0 0 auto;
       width: 100vw;
       height: 100vh;
       margin: 0;
       display: flex;
       justify-content: center;
-      align-items: center;
-  }
+      align-items:flex-start; /* alignement vertical dans la section */
+  } 
+
+/* 2 page accueil */
+
+/* 2a logo */
+/* effet brillance sur logo au passage souris */
+@keyframes light {
+    from {filter:brightness(1); }
+    to {filter:brightness(1.75); }
+    
+}
+@keyframes init {
+    from {filter:brightness(1.75); }
+    to {filter:brightness(1); }
+    
+}
+
+.logoImg {
+    transform: translate(100%, 00%);
+}
+.logo {
+    
+    cursor: pointer;
+    animation: 1s init; 
+    z-index: 15;
+}
+
+.logo:hover {
+    filter:brightness(1.75);
+    /*transition: 1s; */
+    animation: 1s light; 
+   
+}
+
+/* responsive */
+
+/* smarthphone*/
+@media only screen and (max-width: 600px) and (orientation: portrait) { 
+
+    .one {
+        background-image:  url("../img/grey-vertical.jpg");
+        background-position:  center center; 
+        background-size: cover;
+    }
+    .logoImg {
+        width: 148px; 
+        height: 162px;
+    }
+ }
+/* smartphone orientation paysage */
+ @media only screen and (max-width: 1280px) and (orientation: landscape) { 
+
+    .one {
+        background-image:  url("../img/grey-horizontal.jpg");
+        background-position:  center center; 
+        background-size: cover;
+    }
+    .logoImg {
+        width: 148px; 
+        height: 162px;
+    }
+ }
+
+ /* ecran pc les plus courants */
+ @media only screen and (min-width: 1281px) { 
+    .one {
+        background-image:  url("../img/grey-horizontal.jpg");
+        background-position:  center center; 
+        background-size: cover;
+    }
+
+    .logoImg {
+        /* width: 296px; 
+        height: 324px; */
+        width: 166px;
+        height: 243px;
+    }
+}
+
+/* grands écrans 4k */
+
+@media (min-width: 1921px) { 
+    .logoImg {
+        width: 366px; 
+        height: 468px;
+    }
+}
+
+.two {
+    background-image:  url("../img/desk-pc.jpg");
+    /* background-size: contain;
+    background-repeat: no-repeat; */
+    background-position:  center center; 
+    background-size: cover;
+        
+}
+
+.three {
+    background-image:  url("../img/15.jpg");
+    /* background-size: contain;
+    background-repeat: no-repeat; */
+    background-position:  center center; 
+    background-size: cover;
+}
