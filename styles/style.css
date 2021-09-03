@@ -1,59 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Poppins,wght@300&display=swap');
+
+html,body, main, .wrapper, section {
+    scroll-behavior: smooth;
+}
+
 body{
     padding:0;
     margin:0;
   }
   /* 1 - slide */
-  main {
-      position: relative;
-      width: 100vw;
-      height: 100vh;
-      -webkit-overflow-scrolling: touch;
-      overflow: scroll hidden;
-  }
-  
-  .wrapper {
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
-      flex-wrap: nowrap;
-      width: auto;
-      z-index: 1;
-  }
-  
-  .wrapper > section {
-      /* pointer-events: none; */
-      flex: 0 0 auto;
-      width: 100vw;
-      height: 100vh;
-      margin: 0;
-      display: flex;
-      justify-content: center;
-      align-items:flex-start; /* alignement vertical dans la section */
-  } 
+main {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    -webkit-overflow-scrolling: touch;
+    overflow: scroll hidden;
+}
 
-/* 2 page accueil */
+h1 {
+/* font-size: 70px; */
+text-transform: uppercase;
+font-family: 'Poppins', sans-serif;
+/* letter-spacing: 10px; */
+}
 
-/* 2a logo */
+h3 {
+    font-size: 30px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: lighter;
+}
+
+p {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+  
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    width: auto;
+    z-index: 1;
+}
+
+.wrapper > section {
+    /* pointer-events: none; */
+    flex: 0 0 auto;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between;*/
+    align-items: center ;  /*alignement vertical dans la section */
+} 
+
+/* ******************
+    1-> accueil    
+******************* */
+
+.content-header {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+/* 1a logo */
 /* effet brillance sur logo au passage souris */
 @keyframes light {
     from {filter:brightness(1); }
-    to {filter:brightness(1.75); }
+    to {filter:brightness(1.6); }
     
 }
 @keyframes init {
-    from {filter:brightness(1.75); }
+    from {filter:brightness(1.6); }
     to {filter:brightness(1); }
     
 }
 
 .logoImg {
-    transform: translate(100%, 00%);
+    /* transform: translate(0vw, 5vw); */
+    width: 14vw;
+    height: auto;
 }
+
 .logo {
-    
     cursor: pointer;
     animation: 1s init; 
-    z-index: 15;
+    
 }
 
 .logo:hover {
@@ -63,12 +98,128 @@ body{
    
 }
 
+/* 1b menu */
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding-top: 50px;
+    padding-left : 100px;
+    
+}
+
+/* */
+li {
+    list-style: none;
+    transition: all 0.4s;
+    z-index: 15;
+}
+
+li:hover {
+    transform: scale(1.1);
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color:black;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+.main-nav {
+    position: fixed;
+    display: flex;
+    padding: 2em 4em;
+    z-index: 12;
+}
+
+.main-nav .ul {
+    position: fixed;
+    display: flex;
+    right: 4em;
+    background-color: rgba( 255,255,255,.7);
+    padding: 5px;
+}
+
+.main-nav .ul li {
+    margin-left: 1.5em;
+}
+
+.main-nav .ul #border {
+    border: 1px solid black;
+    padding: 0 15px;
+    align-items: center;
+}
+/* 1c intro */
+.intro {
+    transform: translate(15vw, 5vw);
+    width: 35vw;
+}
+.intro h1 {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 24px;  
+    letter-spacing: 2px;
+}
+
+.intro p {
+    padding: 10px;
+    text-align: center;
+    margin-top: 30px;
+    letter-spacing: 1px;
+    line-height: 18px;
+    background-color: rgba( 255,255,255,.6);
+}
+
+
+/* ******************
+    2 -> competences    
+******************* */
+
+.competences {
+    background-image:  url("../img/desk-pc.jpg");
+    /* background-size: contain;
+    background-repeat: no-repeat; */
+    background-position:  center center; 
+    background-size: cover;
+        
+}
+/* ******************
+    3 -> realisations    
+******************* */
+
+.realisations {
+    background-image:  url("../img/15.jpg");
+    /* background-size: contain;
+    background-repeat: no-repeat; */
+    background-position:  center center; 
+    background-size: cover;
+}
+
+/* 4 -> mechoisir */
+.mechoisir {
+    background-image:  url("../img/15.jpg");
+    /* background-size: contain;
+    background-repeat: no-repeat; */
+    background-position:  center center; 
+    background-size: cover;
+}
+
+/* 5 -> contact */
+.contact {
+    background-image:  url("../img/15.jpg");
+    /* background-size: contain;
+    background-repeat: no-repeat; */
+    background-position:  center center; 
+    background-size: cover;
+}
 /* responsive */
 
 /* smarthphone*/
 @media only screen and (max-width: 600px) and (orientation: portrait) { 
 
-    .one {
+    .accueil {
         background-image:  url("../img/grey-vertical.jpg");
         background-position:  center center; 
         background-size: cover;
@@ -78,8 +229,9 @@ body{
         height: 162px;
     }
  }
+ 
 /* smartphone orientation paysage */
- @media only screen and (max-width: 1280px) and (orientation: landscape) { 
+ /* @media only screen and (max-width: 1280px) and (orientation: landscape) { 
 
     .one {
         background-image:  url("../img/grey-horizontal.jpg");
@@ -90,21 +242,22 @@ body{
         width: 148px; 
         height: 162px;
     }
- }
+ } */
 
  /* ecran pc les plus courants */
- @media only screen and (min-width: 1281px) { 
-    .one {
-        background-image:  url("../img/grey-horizontal.jpg");
+ /* @media only screen and (min-width: 1281px) {  */
+@media only screen and (min-width: 1100px) { 
+    .accueil {
+        background-image:  url("../img/bg-home.jpg");
         background-position:  center center; 
         background-size: cover;
     }
 
+
     .logoImg {
-        /* width: 296px; 
-        height: 324px; */
-        width: 166px;
-        height: 243px;
+        transform: translate(15vw, 5vw);
+        width: 14vw;
+        height: auto;
     }
 }
 
@@ -112,24 +265,8 @@ body{
 
 @media (min-width: 1921px) { 
     .logoImg {
-        width: 366px; 
-        height: 468px;
+        transform: translate(0vw, 5vw);
+        width: 10vw;
+        height: auto;
     }
-}
-
-.two {
-    background-image:  url("../img/desk-pc.jpg");
-    /* background-size: contain;
-    background-repeat: no-repeat; */
-    background-position:  center center; 
-    background-size: cover;
-        
-}
-
-.three {
-    background-image:  url("../img/15.jpg");
-    /* background-size: contain;
-    background-repeat: no-repeat; */
-    background-position:  center center; 
-    background-size: cover;
 }
