@@ -178,13 +178,7 @@ stroke-width: 6;
   
 /* 1c intro */
 
-.intro {
-    transform: translate(15vw, 5vw);
-    width: 35vw;
-    padding: 10px 10px 10px 10px;
-    margin-top: 15px;
-    background-color: rgba( 255,255,255,.6);
-}
+
 .intro h1 {
     text-align: center;
     font-size: 24px;  
@@ -252,8 +246,10 @@ stroke-width: 6;
         background-size: cover;
     }
     .logoImg {
-        width: 148px; 
-        height: 162px;
+        padding-top: 60px;
+        padding-left: 40px;
+        width: 170px;
+        height: auto;
     }
 
     /* menu mobile  */
@@ -283,7 +279,15 @@ stroke-width: 6;
     .menuButton {
         z-index: 2;
     }
+    /* ------------- */
 
+    .intro {
+        transform: translate(0vw, 2vw);
+        width: 70vw;
+        padding: 10px 10px 10px 10px;
+        margin-top: 15px;
+        background-color: rgba( 255,255,255,.8);
+    }
 
  }
  
@@ -343,6 +347,14 @@ stroke-width: 6;
     .menuButton {
         display: none;
     }
+
+    .intro {
+        transform: translate(15vw, 5vw);
+        width: 35vw;
+        padding: 10px 10px 10px 10px;
+        margin-top: 15px;
+        background-color: rgba( 255,255,255,.6);
+    }
 }
 
 /* grands écrans 4k */
@@ -352,5 +364,13 @@ stroke-width: 6;
         transform: translate(0vw, 5vw);
         width: 10vw;
         height: auto;
+    }
+
+    .intro {
+        transform: translate(15vw, 5vw);
+        width: 35vw;
+        padding: 10px 10px 10px 10px;
+        margin-top: 15px;
+        background-color: rgba( 255,255,255,.6);
     }
 }
