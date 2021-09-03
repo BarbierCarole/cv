@@ -151,25 +151,28 @@ a {
     padding: 0 15px;
     align-items: center;
 }
+
 /* 1c intro */
+
 .intro {
     transform: translate(15vw, 5vw);
     width: 35vw;
+    padding: 10px 10px 10px 10px;
+    margin-top: 15px;
+    background-color: rgba( 255,255,255,.6);
 }
 .intro h1 {
-    margin-top: 20px;
     text-align: center;
     font-size: 24px;  
     letter-spacing: 2px;
 }
 
 .intro p {
-    padding: 10px;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 10px;
     letter-spacing: 1px;
     line-height: 18px;
-    background-color: rgba( 255,255,255,.6);
+   
 }
 
 
