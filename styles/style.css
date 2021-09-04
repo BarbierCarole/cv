@@ -550,6 +550,9 @@ stroke-width: 6;
 /* pour l'icone Mouse Scroll Down animated icon with chevrons pure css https://codepen.io/aledebarba/pen/wvGYYXX */
 @media only screen and (min-width: 901px) {
 
+    .hand {
+        display: none;
+    }
     .scrolldown {
       --color: white;
       --sizeX: 30px;
@@ -607,7 +610,7 @@ stroke-width: 6;
       flex-direction: row;
       align-items: center;
     }
-    .chevrondown {
+    .chevronright {
       margin-top: -6px;
       position: relative;
       border: solid var(--color);
@@ -617,10 +620,10 @@ stroke-width: 6;
       height: 10px;
       transform: rotate(-45deg); 
     }
-    .chevrondown:nth-child(odd) {
+    .chevronright:nth-child(odd) {
       animation: pulse 500ms ease infinite alternate;
     }
-    .chevrondown:nth-child(even) {
+    .chevronright:nth-child(even) {
       animation: pulse 500ms ease infinite alternate 250ms;
     }
     @keyframes pulse {
@@ -636,20 +639,36 @@ stroke-width: 6;
 
 @media only screen and (max-width: 900px) {
 
+    .intro {
+        padding-bottom: 40px;
+    }
+
     .scrolldown::before {
-        --color: rgb(71, 71, 71);
+        --color: #aaaaaa;
         content: "";
         position: absolute;
-        bottom: 10px;
+        bottom: 40px;
       /*   left: 50%; */
-        width: 16px;
+        width: 10px;
         height: 10px;
-        margin-left: -20px;
+        margin-left: 0px;
         background-color: var(--color);
         border-radius: 100%;
         animation: scrolldown-anim 2s 3;
         box-sizing: border-box;
-        box-shadow: -5px 0px 3px 1px #71717166;
+        box-shadow: 5px 0px 3px 1px #71717166;
+      }
+      .hand {
+        color: #2E91AB;
+        font-size: 2em;
+        position: absolute;
+        bottom: 35px;
+        width: 16px;
+        height: 10px;
+        margin-left: -25px;
+        animation: scrolldown-anim 2s 3;
+        box-sizing: border-box;
+        
       }
       
       @keyframes scrolldown-anim {
@@ -665,7 +684,7 @@ stroke-width: 6;
           height: 12px;
         }
         80% {
-          transform: translate(20px, 0px);
+          transform: translate(-40px, 0px);
           width: 18px;
           height: 12px;
           opacity: 0;
@@ -685,8 +704,8 @@ stroke-width: 6;
         flex-direction: row;
         align-items: center;
       }
-      .chevrondown {
-        --color: rgb(71, 71, 71);
+      .chevronright {
+        --color: #2E91AB;
         margin-top: -6px;
         position: relative;
         border: solid var(--color);
@@ -696,12 +715,15 @@ stroke-width: 6;
         height: 10px;
         transform: rotate(-45deg); 
       }
-      .chevrondown:nth-child(odd) {
+      .chevronright:nth-child(odd) {
         animation: pulse 500ms ease 6 alternate;
       }
-      .chevrondown:nth-child(even) {
+      .chevronright:nth-child(even) {
         animation: pulse 500ms ease 6 alternate 250ms;
       }
+
+      
+
       @keyframes pulse {
         from {
           opacity: 0;
