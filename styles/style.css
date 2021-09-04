@@ -119,15 +119,31 @@ p, li {
 
 .main-nav li:hover {
     transform: scale(1.1);
+    
 }
 
 .main-nav a {
-    text-decoration: none;
     text-transform: uppercase;
-    color:black;
     font-family: 'Poppins', sans-serif;
 }
 
+/* menu actif */
+.btn {
+    border: none;
+    outline: none;
+     padding: 3px 3px; 
+    background-color: rgba( 255,255,255,.1);
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  /* Style the active class, and buttons on mouse-over */
+  .active, .btn:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(54, 54, 54);
+    border: .1em dotted rgb(66, 66, 66);
+    border-radius: 5px;
+  }
 
 /* menu icon burger smatphone */
 
@@ -271,7 +287,7 @@ stroke-width: 6;
     }
     
     ul li {
-    padding:20px 20px;
+    padding:5px 20px;
     text-align:left
     }
 
@@ -328,7 +344,7 @@ stroke-width: 6;
     }
     
     ul li {
-    padding:20px 20px;
+    padding:5px 20px;
     text-align:left
     }
 
@@ -389,12 +405,7 @@ stroke-width: 6;
         margin-right: 1.5em;   
         
     }
-    
-    .main-nav .ul #border {
-        border: 1px solid black;
-        padding: 0 15px;
-        align-items: center;
-    }
+   
     .menuButton, .contactMenu {
         display: none;
     }
@@ -529,3 +540,5 @@ stroke-width: 6;
     }
 
 }
+
+
