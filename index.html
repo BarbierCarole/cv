@@ -48,6 +48,12 @@
                 <div class="intro">
                     <h1>Bienvenue chez Cébé ! </h1>
                     <p>Du développement web / web mobile et du webdesign sur-mesure pour un visuel unique, accrocheur et qui siéra parfaitement à votre entreprise ! Et bien sûr le référencement n'est pas en reste !</p>
+                    <div class='scrolldown'>
+                        <div class="chevrons">
+                          <div class='chevrondown'></div>
+                          <div class='chevrondown'></div>
+                        </div>
+                    </div>
                 </div>
                 
             </section>
@@ -79,16 +85,7 @@
     <script src="./script/script-wheel.js"></script>
     <script src="./script/script-menu.js"></script>
     <script>
-        // Add active class to the current button (highlight it)
-        var header = document.getElementById("buttonMenuActive");
-        var btns = header.getElementsByClassName("btn");
-        for (var i = 0; i < btns.length; i++) {
-          btns[i].addEventListener("click", function() {
-          var current = document.getElementsByClassName("active");
-          current[0].className = current[0].className.replace(" active", "");
-          this.className += " active";
-          });
-        }
+        
         </script>
     
 </body>
