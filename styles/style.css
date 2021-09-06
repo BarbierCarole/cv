@@ -42,7 +42,7 @@ p, li {
     align-items: flex-start;
     flex-wrap: nowrap;
     width: auto;
-    z-index: 1;
+    /* z-index: 1; */
 }
 
 .wrapper > section {
@@ -114,7 +114,7 @@ p, li {
 .main-nav li {
     list-style: none;
     transition: all 0.4s;
-    z-index: 15;
+    
 }
 
 .main-nav li:hover {
@@ -139,9 +139,9 @@ p, li {
   
   /* Style the active class, and buttons on mouse-over */
   .active, .btn:hover {
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255,.7);
     color: rgb(54, 54, 54);
-    border: .1em dotted rgb(66, 66, 66);
+    border: .1em dotted #2E91AB;
     border-radius: 5px;
   }
 
@@ -196,6 +196,9 @@ stroke-width: 6;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: rgba( 255,255,255,.8);
+    border: solid 10px rgb(54, 54, 54);
+    box-shadow: 0px 5px 10px 5px rgba(0, 0,0, .2), inset 2em 1em 1em rgba(192, 175, 175,.3);
 }
 
 .intro h1 {
@@ -212,21 +215,30 @@ stroke-width: 6;
 }
 
 
-/* ******************
+/* ****************************************************
     2 -> competences    
-******************* */
+******************************************************* */
 
 .competences {
-    background-image:  url("../img/desk-pc.jpg");
+       
+    background-image:  url("../img/contact/bg-contact-1920x1080.jpg");
     /* background-size: contain;
     background-repeat: no-repeat; */
     background-position:  center center; 
     background-size: cover;
+    z-index: -2;
         
 }
-/* ******************
+
+.competences .container {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+}
+
+/* ***************************************************
     3 -> realisations    
-******************* */
+***************************************************** */
 
 .realisations {
     background-image:  url("../img/15.jpg");
@@ -247,7 +259,7 @@ stroke-width: 6;
 
 /* 5 -> contact */
 .contact {
-    background-image:  url("../img/15.jpg");
+    background-image: url("../img/contact/bg-contact-1920x1080.jpg");
     /* background-size: contain;
     background-repeat: no-repeat; */
     background-position:  center center; 
@@ -257,15 +269,15 @@ stroke-width: 6;
 
 /* smarthphone*/
 /* and (orientation: portrait)*/
-@media only screen and (max-width: 600px)  { 
+@media only screen and (max-width: 900px)  { 
 
     .accueil {
-        background-image:  url("../img/bg-home.jpg");
+        background-image:  url("../img/15-avec-menu-1920x1080.jpg");
         background-position:  center center; 
         background-size: cover;
     }
     .logoImg {
-        padding-top: 60px;
+        padding-top: 20px;
         padding-left: 40px;
         width: 170px;
         height: auto;
@@ -285,7 +297,7 @@ stroke-width: 6;
         transform:scalex(0);
         transform-origin:left top;
         transition:all 0.3s ease;
-        z-index: 1;
+        z-index: 1001; 
     }
     ul.open {
     transform:scaleY(1);
@@ -306,7 +318,6 @@ stroke-width: 6;
         width: 70vw;
         padding: 10px 10px 10px 10px;
         margin-top: 15px;
-        background-color: rgba( 255,255,255,.8);
     }
     .intro p {
         line-height: 18px;
@@ -314,7 +325,7 @@ stroke-width: 6;
 
  }
   /* smatphone orientation landscape */
-  @media only screen and (max-width: 900px) and (orientation: landscape) { 
+  @media only screen and (max-width: 700px) and (orientation: landscape) { 
 
     .accueil {
         background-image:  url("../img/bg-home.jpg");
@@ -322,9 +333,9 @@ stroke-width: 6;
         background-size: cover;
     }
     .logoImg {
-        padding-top: 10px;
+        padding-top: 5px;
         padding-left: 40px;
-        width: 170px;
+        width: 160px;
         height: auto;
     }
 
@@ -342,7 +353,7 @@ stroke-width: 6;
         transform:scalex(0);
         transform-origin:left top;
         transition:all 0.3s ease;
-        z-index: 1;
+        z-index: 1001;
     }
     ul.open {
     transform:scaleY(1);
@@ -361,12 +372,10 @@ stroke-width: 6;
     .intro {
         transform: translate(0vw, 2vw);
         width: 70vw;
-        padding: 10px 10px 10px 10px;
-        margin-top: 15px;
-        background-color: rgba( 255,255,255,.8);
+        padding: 5px 10px 0px 10px;
     }
     .intro p {
-        line-height: 18px;
+        line-height: 16px;
     }
 
  }
@@ -421,7 +430,6 @@ stroke-width: 6;
         width: 45vw;
         padding: 10px 10px 10px 10px;
         margin-top: 15px;
-        background-color: rgba( 255,255,255,.6);
     }
     .intro p {
         line-height: 18px;
@@ -479,7 +487,7 @@ stroke-width: 6;
         width: 35vw;
         padding: 10px 10px 10px 10px;
         margin-top: 15px;
-        background-color: rgba( 255,255,255,.6);
+        
     }
     .intro p {
         line-height: 1.2em;
@@ -503,7 +511,7 @@ stroke-width: 6;
         position: fixed;
         display: flex;
         padding: 2em 4em;
-        z-index: 12;
+        z-index: 1000;
     }
     
     .main-nav .ul {
@@ -539,7 +547,6 @@ stroke-width: 6;
         width: 35vw;
         padding: 10px 10px 10px 10px;
         margin-top: 15px;
-        background-color: rgba( 255,255,255,.6);
     }
     .intro p {
         line-height: 1.2em;
@@ -575,9 +582,9 @@ stroke-width: 6;
       width: 6px;
       height: 6px;
       margin-left: -3px;
-      background-color: var(--color);
+      background-color: #2E91AB;
       border-radius: 100%;
-      animation: scrolldown-anim 2s infinite;
+      animation: scrolldown-anim 2s 3;
       box-sizing: border-box;
       box-shadow: 0px -5px 3px 1px #ffffff66;
     }
@@ -621,10 +628,10 @@ stroke-width: 6;
       transform: rotate(-45deg); 
     }
     .chevronright:nth-child(odd) {
-      animation: pulse 500ms ease infinite alternate;
+      animation: pulse 500ms ease 6 alternate;
     }
     .chevronright:nth-child(even) {
-      animation: pulse 500ms ease infinite alternate 250ms;
+      animation: pulse 500ms ease 6 alternate 250ms;
     }
     @keyframes pulse {
       from {
@@ -636,33 +643,33 @@ stroke-width: 6;
     }
     
 }
-
+/* pointeur avec la main pour petits ecrans tactils */
 @media only screen and (max-width: 900px) {
 
     .intro {
-        padding-bottom: 40px;
+        padding-bottom: 30px;
     }
 
     .scrolldown::before {
-        --color: #aaaaaa;
+        --color: #2E91AB;
         content: "";
         position: absolute;
-        bottom: 40px;
+        bottom: 30px;
       /*   left: 50%; */
-        width: 10px;
-        height: 10px;
+        width: 5px;
+        height: 5px;
         margin-left: 0px;
         background-color: var(--color);
         border-radius: 100%;
         animation: scrolldown-anim 2s 3;
         box-sizing: border-box;
-        box-shadow: 5px 0px 3px 1px #71717166;
+        box-shadow: 5px 0px 1px 1px #2E91AB66;
       }
       .hand {
-        color: #2E91AB;
+        color: #ffffff;
         font-size: 2em;
         position: absolute;
-        bottom: 35px;
+        bottom: 25px;
         width: 16px;
         height: 10px;
         margin-left: -25px;
@@ -674,23 +681,23 @@ stroke-width: 6;
       @keyframes scrolldown-anim {
         0% {
           opacity: 0;
-          width: 16px;
-          height: 10px;
+          width: 8px;
+          height: 8px;
           
         }
         40% {
           opacity: 1;
-          width: 20px;
-          height: 12px;
+          width: 16px;
+          height: 16px;
         }
         80% {
           transform: translate(-40px, 0px);
-          width: 18px;
+          width: 16px;
           height: 12px;
           opacity: 0;
         }
         100% {
-          width: 18px;
+          width: 10px;
           height: 10px;
           opacity: 0;
         }
@@ -705,7 +712,7 @@ stroke-width: 6;
         align-items: center;
       }
       .chevronright {
-        --color: #2E91AB;
+        --color: #2e92abd3;
         margin-top: -6px;
         position: relative;
         border: solid var(--color);
