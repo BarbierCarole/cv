@@ -456,24 +456,38 @@
 
 
 @media only screen and (max-width: 900px)  { 
-    .cat, .wall, .ronron {
+    .cat, .wall, .bgSoundCat  {
         bottom: calc(22% + 20px);
         margin-right: calc(-6% + 10px);
+    }
 
+    .ronron {
+        bottom: calc(38% + 10px);
+        margin-right: calc(-40%);
     }
 }
 
 @media only screen and (max-width: 700px) and (orientation: landscape) { 
-    .cat, .wall, .ronron {
+    .cat, .wall, .bgSoundCat  {
         bottom: calc(22% + 20px);
         margin-right: calc(-6% + 10px);
+    }
+
+    .ronron {
+        bottom: calc(38% + 10px);
+        margin-right: calc(-30%);
     }
 }
 
 @media only screen and (min-width: 901px) and (max-width: 1280px)  { 
-    .cat, .wall {
+    .cat, .wall, .bgSoundCat  {
         bottom: calc(24% + 20px);
         margin-right: calc(12% + 10px);
+    }
+
+    .ronron {
+        bottom: calc(38% + 10px);
+        margin-right: calc(-3%);
     }
 }
 
@@ -515,9 +529,13 @@
 } */
 
 @media (min-width: 2560px) { 
-    .cat, .wall, .ronron {
+    .cat, .wall, .bgSoundCat  {
         bottom: calc(22% + 20px);
         margin-right: calc(10% + 10px);
     }
-}
 
+    .ronron {
+        bottom: calc(38% + 10px);
+        margin-right: calc(-3%);
+    }
+}
