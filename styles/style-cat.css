@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito:300");
+@import url("https://fonts.googleapis.com/css2?family=Allison&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
 
 
 .content, .content-text {
@@ -9,20 +11,25 @@
   display: flex;
   justify-content: flex-end;
   /* position: absolute; */
+  z-index: 1;
 }
-
 
 .wall {
   background-color: #696969;
   width: 100px;
   height: 20px;
-  
   position: absolute;
   border-radius: 10px;
   z-index: 1;
 }
 
-/* .wall::before,
+.ronron {
+    position: absolute;
+}
+
+
+/* pieds du tabouret
+.wall::before,
 .wall::after {
   width: 20px;
   height: 40px;
@@ -32,11 +39,104 @@
   position: absolute;
   content: "";
   border-radius: 0px 0px 20px 20px;
-} */
+}  */
 
 .wall::after {
   left: 75%;
 }
+
+.bgSoundCat {
+    width: 100px;
+    height: 125px;
+    position: absolute;
+    bottom: calc(19% + 20px);
+    margin-right: calc(3% + 20px);
+    cursor: pointer;    
+    z-index: 2;
+}
+
+/******** ronron text *******/
+#ronron {
+    display: none;
+}
+
+.ronron span {
+
+  font-size: 24px;
+  text-shadow: 0 0px #f3c623, 0 0px #f2caaa;
+  transform: translate(0, 100%) rotate(4deg);
+  animation: jump 10s ease-in-out infinite;
+  display: inline-block;
+  font-family: 'Architects Daughter', cursive;
+  color: rgb(255, 123, 0);
+}
+.ronron span:nth-child(1) {
+  animation-delay: 120ms;
+}
+.ronron span:nth-child(2) {
+  animation-delay: 240ms;
+}
+.ronron span:nth-child(3) {
+  animation-delay: 360ms;
+}
+.ronron span:nth-child(4) {
+  animation-delay: 480ms;
+}
+.ronron span:nth-child(5) {
+  animation-delay: 600ms;
+}
+.ronron span:nth-child(6) {
+  animation-delay: 720ms;
+}
+.ronron span:nth-child(7) {
+  animation-delay: 840ms;
+}
+.ronron span:nth-child(8) {
+  animation-delay: 960ms;
+}
+.ronron span:nth-child(9) {
+  animation-delay: 1080ms;
+}
+.ronron span:nth-child(10) {
+  animation-delay: 1200ms;
+}
+.ronron span:nth-child(11) {
+  animation-delay: 1320ms;
+}
+.ronron span:nth-child(12) {
+  animation-delay: 1440ms;
+}
+.ronron span:nth-child(13) {
+  animation-delay: 1560ms;
+}
+
+@keyframes jump {
+  33% {
+    text-shadow: 0 30px #f37121, 0 50px #f2aaaa;
+  }
+  50% {
+    transform: translate(0, 0) rotate(-4deg);
+    text-shadow: 0 0px #ff9430, 0 0px #da9f40;
+  }
+  66.67% {
+    text-shadow: 0 -30px #e6a689, 0 -50px #fddb6c;
+  }
+}
+
+/* 
+@media screen and (max-height: 200px) {
+  .ronron {
+    transform: scale(0.3, 0.3);
+  }
+}
+@media screen and (max-width: 576px) {
+  .ronron span {
+    font-size: 50px;
+  }
+} */
+
+/******* fin ronron text ***/
+
 
 .cat {
   width: 100px;
@@ -48,6 +148,7 @@
   margin-right: calc(3% + 20px);
   box-shadow: inset 0px -10px 0px rgba(0, 0, 0, 0.2);
 }
+
 
 .cat::after {
   width: 50%;
@@ -239,6 +340,7 @@
   left: 0px;
 }
 
+/* museau*/
 .mouth {
   font-family: "Nunito", sans-serif;
   color: #d28422;
@@ -271,6 +373,7 @@
   transform: rotate(90deg);
 }
 
+/* pattes */
 .paws {
   width: 15px;
   height: 15px;
@@ -299,6 +402,7 @@
   left: 60px;
 }
 
+ /*queue */
 .tail {
   width: 50px;
   height: 8px;
@@ -352,14 +456,15 @@
 
 
 @media only screen and (max-width: 900px)  { 
-    .cat, .wall {
+    .cat, .wall, .ronron {
         bottom: calc(22% + 20px);
         margin-right: calc(-6% + 10px);
+
     }
 }
 
 @media only screen and (max-width: 700px) and (orientation: landscape) { 
-    .cat, .wall {
+    .cat, .wall, .ronron {
         bottom: calc(22% + 20px);
         margin-right: calc(-6% + 10px);
     }
@@ -367,22 +472,52 @@
 
 @media only screen and (min-width: 901px) and (max-width: 1280px)  { 
     .cat, .wall {
-        bottom: calc(22% + 20px);
-        margin-right: calc(-2% + 10px);
+        bottom: calc(24% + 20px);
+        margin-right: calc(12% + 10px);
     }
 }
 
 @media only screen and (min-width: 1281px) and (max-width: 2560px) { 
-    .cat, .wall {
-        bottom: calc(24% + 10px);
-        margin-right: calc(3% + 10px);
+    .cat, .wall, .bgSoundCat {
+        bottom: calc(20% + 10px);
+        margin-right: calc(8% + 10px);
     }
-}
+    .ronron {
+        bottom: calc(38% + 10px);
+        margin-right: calc(-3%);
+    }
+    /* #ronron__one {
+        position: absolute;
+        bottom: calc(20% + 10px);
+        background-color: rgb(178, 176, 32);
+        transition: transform 330ms;
+    }
+    #ronron__two {
+        position: absolute;
+        bottom: calc(30% + 10px);
+        background-color: rgb(178, 32, 171);
+    }
+    #ronron__three {
+        position: absolute;
+        bottom: calc(40% + 10px);
+        background-color: rgb(43, 255, 227);
+    }
+
+    #ronron__one.ronron__one {
+        transform: translate(100px, 0) ;
+    }
+    #ronron__two.ronron__two {
+        background-color: rgb(220, 20, 120);
+    }
+    #ronron__three.ronron__three {
+        background-color: rgb(241, 97, 126);
+    }
+} */
 
 @media (min-width: 2560px) { 
-    .cat, .wall {
-        bottom: calc(17% + 20px);
-        margin-right: calc(3% + 10px);
+    .cat, .wall, .ronron {
+        bottom: calc(22% + 20px);
+        margin-right: calc(10% + 10px);
     }
 }
 

@@ -36,6 +36,9 @@ p, li {
     font-family: 'Poppins', sans-serif;
 }
   
+section {
+    border-right: 4mm ridge rgba(51, 38, 36, 0.822);
+}
 .wrapper {
     display: flex;
     flex-direction: row;
@@ -221,12 +224,12 @@ stroke-width: 6;
 
 .competences {
        
-    background-image:  url("../img/contact/bg-contact-1920x1080.jpg");
+    background-image:  url("../img/contact/bg-contact-1920x1080-sans-tableau.jpg");
     /* background-size: contain;
     background-repeat: no-repeat; */
     background-position:  center center; 
     background-size: cover;
-    z-index: -2;
+    /* z-index: -2; */
         
 }
 
@@ -572,6 +575,7 @@ stroke-width: 6;
       border-radius: 50px;
       box-sizing: border-box;
       margin-bottom: 16px;
+      filter: drop-shadow(5px 5px 5px rgba(63, 60, 59,.8));
     }
     
     .scrolldown::before {
@@ -586,7 +590,6 @@ stroke-width: 6;
       border-radius: 100%;
       animation: scrolldown-anim 2s 3;
       box-sizing: border-box;
-      box-shadow: 0px -5px 3px 1px #ffffff66;
     }
     
     @keyframes scrolldown-anim {
@@ -629,9 +632,11 @@ stroke-width: 6;
     }
     .chevronright:nth-child(odd) {
       animation: pulse 500ms ease 6 alternate;
+      filter: drop-shadow(1px 1px 5px rgba(63, 60, 59,.6));
     }
     .chevronright:nth-child(even) {
       animation: pulse 500ms ease 6 alternate 250ms;
+      filter: drop-shadow(1px 1px 5px rgba(63, 60, 59,.6));
     }
     @keyframes pulse {
       from {
@@ -663,10 +668,11 @@ stroke-width: 6;
         border-radius: 100%;
         animation: scrolldown-anim 2s 3;
         box-sizing: border-box;
-        box-shadow: 5px 0px 1px 1px #2E91AB66;
+        filter: drop-shadow(10px 5px 5px #2E91AB66);
       }
       .hand {
         color: #ffffff;
+        filter: drop-shadow(10px 5px 5px rgba(63, 60, 59,.7));
         font-size: 2em;
         position: absolute;
         bottom: 25px;
@@ -710,6 +716,7 @@ stroke-width: 6;
         display: flex;
         flex-direction: row;
         align-items: center;
+        
       }
       .chevronright {
         --color: #2e92abd3;
