@@ -23,7 +23,7 @@ function dragElement(elmnt) {
   }
 
   function elementDrag(e) {
-    e = e || window.event;
+    e = e || window.event || window.ontouchmove;
     e.preventDefault();
     // calculate the new cursor position:
     pos1 = pos3 - e.clientX;
